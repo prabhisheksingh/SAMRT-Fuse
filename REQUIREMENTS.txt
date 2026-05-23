@@ -1,0 +1,37 @@
+Requirements
+============
+
+Software
+--------
+MATLAB R2020a or later is recommended.
+
+Required Toolbox
+----------------
+Image Processing Toolbox
+
+Important MATLAB Functions Used
+-------------------------------
+imread, imresize, imshow, rgb2gray, rgb2ycbcr, ycbcr2rgb, im2double, mat2gray, imadjust, graythresh, imfill, bwareaopen, imclose, strel, imgaussfilt, imfilter, fspecial, entropyfilt, imgradient, imguidedfilter, imcrop, histogram, exportgraphics, imwrite.
+
+Input Image Requirements
+------------------------
+1. The two input images should be registered.
+2. Both images should represent the same anatomical region.
+3. Images may be grayscale or RGB.
+4. Supported formats include PNG, JPG, JPEG, BMP, and TIFF.
+
+Hardware Requirements
+---------------------
+The code is lightweight and can run on a normal desktop or laptop.
+
+Recommended:
+RAM: 8 GB or higher
+Processor: Intel i5/Ryzen 5 or better
+GPU: Not required
+
+Limitations
+-----------
+1. The code does not perform image registration.
+2. The code assumes two input images only.
+3. The code is designed for visual fusion and interpretability analysis.
+4. Clinical validation should be performed separately before diagnostic use.

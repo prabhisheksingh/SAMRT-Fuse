@@ -1,0 +1,21 @@
+License
+=======
+
+Academic and Research Use License
+
+This SMART-Fuse MATLAB code is provided for academic, educational, and non-commercial research purposes.
+
+You may:
+1. Use the code for academic experiments.
+2. Modify the code for research purposes.
+3. Use generated figures in academic manuscripts with proper citation.
+4. Compare the method with other medical image fusion methods.
+
+You may not:
+1. Sell the code as a commercial product.
+2. Claim the method as your own without proper citation.
+3. Use the code for clinical diagnosis without independent medical validation.
+4. Redistribute modified versions without mentioning the original method.
+
+Disclaimer:
+This code is provided as is without warranty of any kind. The authors are not responsible for any direct or indirect consequences arising from the use of this code. The method is intended for research purposes only and should not be used as a standalone clinical diagnostic tool.

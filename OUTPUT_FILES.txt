@@ -1,0 +1,61 @@
+Output Files
+============
+
+Main Fused Outputs
+------------------
+SMART_Fuse_Output_Color.png
+    Final RGB fused output image.
+
+SMART_Fuse_Output_Gray.png
+    Grayscale fused luminance image.
+
+Interpretability Maps
+---------------------
+SMART_Fuse_Weight_Map_W1.png
+    Adaptive weight map showing source image I1 contribution.
+
+SMART_Fuse_Weight_Map_W2.png
+    Adaptive weight map showing source image I2 contribution.
+
+SMART_Fuse_Foreground_Mask.png
+    Binary foreground mask used to suppress background regions.
+
+SMART_Fuse_Decision_Strength_Map.png
+    Decision-strength map computed as |W1-W2|.
+
+SMART_Fuse_Dominance_Map.png
+    Region-wise source dominance map.
+
+High-Resolution Figures
+-----------------------
+Fig_1_SMART_Fuse_Output_1000dpi.png
+    Shows source images and final SMART-Fuse output.
+
+Fig_2_SMART_Fuse_Weight_Maps_Mask_1000dpi.png
+    Shows SMART-Fuse output, W1, W2, and foreground mask M.
+
+Fig_3_SMART_Fuse_Weight_Histogram_1000dpi.png
+    Shows histogram-based source contribution distribution of W1 and W2 inside the foreground mask.
+
+Fig_4_SMART_Fuse_Decision_Dominance_1000dpi.png
+    Shows SMART-Fuse output, decision-strength map |W1-W2|, and dominance map.
+
+Fig_5_SMART_Fuse_ROI_Interpretability_1000dpi.png
+    Shows ROI-level interpretability analysis using fused image, W1, W2, and |W1-W2|.
+
+Fig_6_SMART_Fuse_Complete_Interpretability_1000dpi.png
+    Combined interpretability figure suitable for manuscript preparation.
+
+Suggested Figure Captions
+-------------------------
+Fig. 1. Visual output of the proposed SMART-Fuse method showing source images and fused result.
+
+Fig. 2. Basic interpretability analysis of SMART-Fuse using fused output, adaptive weight maps W1 and W2, and foreground mask M.
+
+Fig. 3. Histogram-based source contribution analysis of adaptive weight maps W1 and W2 inside the foreground mask.
+
+Fig. 4. Decision-strength and dominance-map analysis of SMART-Fuse using |W1-W2| and region-wise modality dominance.
+
+Fig. 5. ROI-level interpretability analysis showing local behavior of the fused output, W1, W2, and |W1-W2|.
+
+Fig. 6. Complete interpretability analysis of SMART-Fuse using adaptive weight maps, foreground mask, weight histogram, decision-strength map, dominance map, and ROI-level visualization.

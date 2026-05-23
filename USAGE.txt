@@ -1,0 +1,70 @@
+Usage Instructions
+==================
+
+Step 1: Prepare Input Images
+----------------------------
+Prepare two registered source images, for example MRI/PET, MRI/SPECT, or CT/MRI.
+
+Supported image formats:
+.png, .jpg, .jpeg, .bmp, .tif, .tiff
+
+The two images should represent the same anatomical region and should be spatially aligned before fusion.
+
+Step 2: Open MATLAB
+-------------------
+Open MATLAB and place the following file in the current working folder:
+
+SMART_Fuse_Proposed_Method_Visual_Analysis.m
+
+Step 3: Run the Code
+--------------------
+In the MATLAB command window, type:
+
+run SMART_Fuse_Proposed_Method_Visual_Analysis.m
+
+or open the file and press the Run button.
+
+Step 4: Select Input Images
+---------------------------
+The code will ask you to select Source Image I1 and Source Image I2.
+
+Step 5: View Outputs
+--------------------
+After execution, the code displays and saves:
+1. Input images and SMART-Fuse output
+2. SMART-Fuse output with weight maps W1 and W2
+3. Foreground mask M
+4. Histogram of W1 and W2 inside the foreground mask
+5. Decision-strength map |W1-W2|
+6. Dominance map
+7. ROI-level interpretability visualization
+8. Complete interpretability panel
+
+Saved Files
+-----------
+SMART_Fuse_Output_Color.png
+SMART_Fuse_Output_Gray.png
+SMART_Fuse_Weight_Map_W1.png
+SMART_Fuse_Weight_Map_W2.png
+SMART_Fuse_Foreground_Mask.png
+SMART_Fuse_Decision_Strength_Map.png
+SMART_Fuse_Dominance_Map.png
+
+High-resolution figures:
+Fig_1_SMART_Fuse_Output_1000dpi.png
+Fig_2_SMART_Fuse_Weight_Maps_Mask_1000dpi.png
+Fig_3_SMART_Fuse_Weight_Histogram_1000dpi.png
+Fig_4_SMART_Fuse_Decision_Dominance_1000dpi.png
+Fig_5_SMART_Fuse_ROI_Interpretability_1000dpi.png
+Fig_6_SMART_Fuse_Complete_Interpretability_1000dpi.png
+
+ROI Adjustment
+--------------
+The ROI used for local interpretability analysis is defined as:
+
+roi = [90 85 70 70];
+
+Format:
+[x y width height]
+
+You may change this according to the clinically important region.

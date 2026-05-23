@@ -1,0 +1,46 @@
+SMART-Fuse Method Overview
+==========================
+
+SMART-Fuse is a semantic-aware multimodal medical image fusion method. It combines useful anatomical and functional information from two registered source images.
+
+Main Processing Steps
+---------------------
+
+1. Input Image Preparation
+The user selects two source images. The images are resized to a common spatial size. If an image is grayscale, it is converted into a three-channel image.
+
+2. Grayscale Guidance Generation
+Both input images are converted into grayscale guidance images. These guidance images are used to compute semantic activity maps.
+
+3. Foreground Mask Generation
+A foreground mask separates useful anatomical or functional regions from the non-informative background.
+
+4. Semantic Activity Map Computation
+For each input image, a semantic activity map is computed using:
+- edge strength,
+- local variance,
+- Laplacian response,
+- local entropy.
+
+5. Adaptive Weight Map Generation
+The semantic activity maps are converted into adaptive source contribution maps:
+W1: contribution map of source image I1
+W2: contribution map of source image I2
+
+6. Luminance-Chrominance Conversion
+Both images are converted into YCbCr color space. The luminance channels are fused, while chrominance information is selected from the source image with stronger colorfulness.
+
+7. Base-Detail Decomposition
+The luminance channels are decomposed into base layers and detail layers.
+
+8. Base Layer Fusion
+Base layers are fused using adaptive weight maps W1 and W2.
+
+9. Detail Layer Fusion
+Detail layers are fused using a hybrid edge-aware strategy to preserve local details, boundaries, and fine structures.
+
+10. Final Image Reconstruction
+The fused luminance image is combined with selected chrominance information to reconstruct the final RGB fused image.
+
+11. Background Suppression
+The foreground mask is applied to suppress non-informative background regions.

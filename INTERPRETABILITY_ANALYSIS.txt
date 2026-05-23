@@ -1,0 +1,72 @@
+Interpretability Analysis of SMART-Fuse
+=======================================
+
+SMART-Fuse provides visual interpretability through adaptive weight maps and a foreground mask. These outputs help explain how the fused image is generated.
+
+1. Weight Map W1
+----------------
+W1 represents the spatial contribution of source image I1.
+
+Interpretation:
+- Bright regions in W1 indicate higher contribution from I1.
+- Dark regions in W1 indicate lower contribution from I1.
+- Spatial variation in W1 confirms that the method is not using fixed averaging.
+
+2. Weight Map W2
+----------------
+W2 represents the spatial contribution of source image I2.
+
+Interpretation:
+- Bright regions in W2 indicate higher contribution from I2.
+- Dark regions in W2 indicate lower contribution from I2.
+- W1 and W2 are complementary in many regions.
+
+3. Foreground Mask M
+--------------------
+M identifies the useful foreground region.
+
+Interpretation:
+- White regions represent informative anatomical or functional areas.
+- Black regions represent background.
+- The mask reduces the effect of non-informative background pixels.
+
+4. Histogram of W1 and W2
+-------------------------
+The histogram shows the distribution of W1 and W2 values inside the foreground region.
+
+Interpretation:
+- A wide distribution indicates spatially adaptive fusion.
+- Histogram overlap indicates balanced fusion in common-information regions.
+- Separate peaks indicate source-specific dominance in selected regions.
+
+5. Decision-Strength Map |W1-W2|
+--------------------------------
+The decision-strength map shows the absolute difference between W1 and W2.
+
+Interpretation:
+- Bright regions indicate strong preference for one source image.
+- Dark regions indicate balanced contribution from both source images.
+- This map explains where the fusion decision is confident.
+
+6. Dominance Map
+----------------
+The dominance map shows region-wise source dominance.
+
+Interpretation:
+- One class represents balanced regions.
+- One class represents I1-dominant regions.
+- One class represents I2-dominant regions.
+- This map provides a direct visual explanation of source selection.
+
+7. ROI-Level Interpretability
+-----------------------------
+The ROI-level figure shows the local behavior of the fused image and weight maps.
+
+Interpretation:
+- It explains how SMART-Fuse behaves in a selected local region.
+- It shows whether local structures are supported by I1, I2, or both.
+- It connects weight-map behavior with visible fused-image details.
+
+Paper-Ready Inference
+---------------------
+The interpretability analysis confirms that SMART-Fuse performs adaptive and foreground-aware fusion. The weight maps W1 and W2 show where each source image contributes more strongly. The foreground mask restricts fusion to meaningful image regions and suppresses background interference. The histogram confirms that the method uses spatially varying weights instead of fixed averaging. The decision-strength and dominance maps show confident source selection in different regions. The ROI-level analysis further validates that local anatomical or functional regions are fused adaptively.

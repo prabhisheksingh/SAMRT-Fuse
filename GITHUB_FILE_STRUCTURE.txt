@@ -1,0 +1,47 @@
+Suggested GitHub Repository Structure
+====================================
+
+SMART-Fuse/
+|
+|-- SMART_Fuse_Proposed_Method_Visual_Analysis.m
+|
+|-- README.txt
+|-- USAGE.txt
+|-- REQUIREMENTS.txt
+|-- METHOD_OVERVIEW.txt
+|-- OUTPUT_FILES.txt
+|-- INTERPRETABILITY_ANALYSIS.txt
+|-- CITATION.txt
+|-- LICENSE.txt
+|-- GITHUB_FILE_STRUCTURE.txt
+|
+|-- sample_images/
+|   |-- I1.png
+|   |-- I2.png
+|
+|-- results/
+    |-- SMART_Fuse_Output_Color.png
+    |-- SMART_Fuse_Output_Gray.png
+    |-- SMART_Fuse_Weight_Map_W1.png
+    |-- SMART_Fuse_Weight_Map_W2.png
+    |-- SMART_Fuse_Foreground_Mask.png
+    |-- SMART_Fuse_Decision_Strength_Map.png
+    |-- SMART_Fuse_Dominance_Map.png
+    |-- Fig_6_SMART_Fuse_Complete_Interpretability_1000dpi.png
+
+Recommended GitHub Description
+------------------------------
+SMART-Fuse is a MATLAB implementation of a semantic-aware multimodal medical image fusion method with adaptive weight maps, foreground-aware fusion, and visual interpretability analysis.
+
+Recommended GitHub Topics
+-------------------------
+medical-image-fusion
+multimodal-image-fusion
+matlab
+image-processing
+medical-imaging
+smart-fuse
+weight-map-analysis
+interpretability
+foreground-mask
+image-fusion

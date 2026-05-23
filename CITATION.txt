@@ -1,0 +1,24 @@
+Citation
+========
+
+If you use this SMART-Fuse code or the methodology in your research work, please cite the associated paper or manuscript.
+
+Suggested citation format:
+
+Author(s), "SMART-Fuse: Semantic-Aware Multimodal Medical Image Fusion Using Adaptive Weight Maps and Foreground-Guided Detail Preservation," Journal/Conference Name, Year.
+
+BibTeX template:
+
+@article{smartfuse2026,
+  title   = {SMART-Fuse: Semantic-Aware Multimodal Medical Image Fusion Using Adaptive Weight Maps and Foreground-Guided Detail Preservation},
+  author  = {Author Name(s)},
+  journal = {Journal Name},
+  year    = {2026},
+  volume  = {},
+  number  = {},
+  pages   = {},
+  doi     = {}
+}
+
+Note:
+Please replace the title, author names, journal name, year, and DOI according to the final published version.
